@@ -20,37 +20,14 @@ namespace HW11
             Console.Write("Введите b=");
             double b = Convert.ToDouble(Console.ReadLine());
             LineEq lineEq = new LineEq(k, b);
-            lineEq.Root();
             Console.ReadKey();
         }
         struct LineEq
         {
-            public double k { get; set; }
-            public double b { get; set; }
             public LineEq(double k, double b)
             {
-                k = k;
-                b = b;
             }
-            public void Root()
             {
-
-                if (k == 0 && b == 0)
-                {
-                    Console.WriteLine("Уравнение имеет бесконечное количество решени");
-                }
-                else
-                {
-                    if (k == 0)
-                    {
-                        Console.WriteLine("Уравнение не имеет решения"); 
-                    }
-                    else
-                    {
-                        double x = -b / k;
-                        Console.WriteLine("Корень уровнения х = {0}", х);
-                    }
-                }
             }
                 
         }
